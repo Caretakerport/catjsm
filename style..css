@@ -255,3 +255,31 @@ footer {
 footer p {
     margin: 0;
 }
+/* Media queries for responsiveness */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Mobile view styles */
+  .contains {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-1,
+  .section-2 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) {
+  /* Computer view styles */
+  .contains {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-1 {
+    width: 60%;
+    text-align: left;
+  }
+  .section-2 {
+    width: 35%;
+  }
+}
